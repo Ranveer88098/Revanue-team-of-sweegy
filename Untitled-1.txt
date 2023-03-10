@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // Define revenue for first 21 days in Feb
+    int revenue21 = 21 * 1000000; // 21 million dollars
+    
+    // Define revenue for Feb 22
+    int revenue22 = 700000; // 30% dip
+    
+    // Calculate total revenue for February
+    int totalRevenue = revenue21 + revenue22;
+    
+    // Calculate percentage change in revenue
+    float percentageChange = ((float)revenue22 / (float)revenue21) * 100;
+    
+    // Output results
+    cout << "Revenue for first 21 days: " << revenue21 << " dollars" << endl;
+    cout << "Revenue for Feb 22: " << revenue22 << " dollars" << endl;
+    cout << "Total revenue for February: " << totalRevenue << " dollars" << endl;
+    cout << "Percentage change in revenue: " << percentageChange << "%" << endl;
+    
+    return 0;
+}
